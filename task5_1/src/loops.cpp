@@ -29,9 +29,8 @@ void dfs_impl(const Graph& g, int v,
     }
 
     last[v] = timer - 1;
+    }
 }
-
-};
 
 std::string type_name(Type t) {
     if (t == Type::IRREDUCIBLE) {
@@ -44,6 +43,7 @@ std::string type_name(Type t) {
 DfsData dfs_run(const Graph& g, int start) {
     int n = static_cast<int>(g.name.size());
 
+    // dfs data struct
     DfsData data;
     data.number.assign(n, -1); // preorder number of v in DFS tree
     data.node.assign(n, -1); // vertex with preorder number i
