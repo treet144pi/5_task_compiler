@@ -39,12 +39,17 @@ make
 ## Пример
 
 Вход
+
 {start,1}, {1,2}, {2,1}, {2,3}, {3,1}, {3,4}, {4,stop}
 
-
 Вывод
+
 Loop blocks:
+
 [0] -> {start, 4, stop}
+
 [1] -> {1, 2, 3}, header: 1, reducible
+
 Loop tree:
+
 {0,1}
