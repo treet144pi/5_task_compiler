@@ -18,10 +18,12 @@
 - `include/ssa.hpp`
 
 ## Сборка
+```bash
 mkdir build
 cd build
 cmake ..
 make
+```
 
 ## Запуск
 ./phi_place
